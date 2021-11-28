@@ -3,9 +3,9 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* ==== section one ==== */
@@ -291,6 +291,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .section-four_title {
