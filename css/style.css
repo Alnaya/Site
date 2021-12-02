@@ -563,6 +563,7 @@
     border-radius: 5px;
     text-shadow: 0 1px 1px white;
     box-shadow: 0 1px 1px #263a73; 
+    padding: 6px 10px;
     white-space: nowrap;
     vertical-align: middle;
     color: #fff;
@@ -579,6 +580,7 @@
     border-radius: 5px;
     text-shadow: 0 1px 1px white;
     box-shadow: 0 1px 1px #263a73; 
+    padding: 6px 10px;
     white-space: nowrap;
     vertical-align: middle;
     color: #fff;
@@ -792,7 +794,7 @@ ol {
         margin-right: 5px;
     }
     ol {
-        max-width: 400px;
+        max-width: 350px;
         overflow: hidden;
     }
 }
