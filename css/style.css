@@ -1,10 +1,13 @@
+/* TODO: Адаптив не рушиться до 400px */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red;  */
+    /* border: 1px solid red; */
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     /* overflow-x: hidden; */
 }
 
@@ -510,6 +513,132 @@
     color: #fff;
 }
 
+/* ==== section seven ==== */
+
+.section-seven {
+    min-height: 100vh;
+    background-color: #3c559a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-seven_title {
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.section-seven_title:after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #293873;
+    width: 70px;
+    bottom: -10px;
+    left: calc(50% - 35px);
+}
+
+.section-seven_discription {
+    max-width: 900px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    max-width: 700px;
+}
+
+.name {
+    width: 340px;
+    height: 60px;
+    border:none;
+    border-radius: 5px;
+    text-shadow: 0 1px 1px white;
+    box-shadow: 0 1px 1px #263a73; 
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #fff;
+    background: #263a73;
+    cursor: pointer;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.email {
+    width: 340px;
+    height: 60px;
+    border:none;
+    border-radius: 5px;
+    text-shadow: 0 1px 1px white;
+    box-shadow: 0 1px 1px #263a73; 
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #fff;
+    background: #263a73;
+    cursor: pointer;
+    text-align: left;
+}
+
+.message {
+    margin-top: 20px;
+    width: 700px;
+    height: 130px;
+    border:none;
+    border-radius: 5px;
+    text-shadow: 0px 1px 1px white;
+    box-shadow: 0 1px 1px #263a73; 
+    padding: 6px 10px;
+    color: #fff;
+    background: #263a73;
+    cursor: pointer;
+}
+
+.btn_3 {
+    background-color: #20c0a4;
+    color: #fff;
+    border: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+}
+
+/* ==== footer ==== */
+
+li {
+    list-style-type: none;
+}
+
+.footer {
+    min-height: 20vh;
+    background-color: #344b8f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ol {
+   width: 700px;
+}
+
+.social {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+
+/* ==== media ==== */
+
 @media screen and (max-width: 992px){
     .navbar_list{
         display: none;
@@ -634,5 +763,36 @@
     }
     .card_name{
         max-width: 300px;
+    }
+    .block{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .email, .name {
+        max-width: 300px;
+        max-height: 50px;
+    }
+    .name {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .message{
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .btn_3 {
+        max-width: 300px;
+        max-height: 50px;
+    }
+    .soc {
+        margin-right: 5px;
+    }
+    ol {
+        max-width: 400px;
+        overflow: hidden;
     }
 }
