@@ -638,7 +638,6 @@ ol {
     justify-content: space-between;
 }
 
-
 /* ==== media ==== */
 
 @media screen and (max-width: 992px){
@@ -791,10 +790,16 @@ ol {
         max-height: 50px;
     }
     .soc {
-        margin-right: 5px;
+        margin-right: 2px;
+    }
+    .soc:last-child{
+        margin-right: -2px;
     }
     ol {
-        max-width: 350px;
+        max-width: 250px;
         overflow: hidden;
+    }
+    li {
+        font-size: 10px;
     }
 }
